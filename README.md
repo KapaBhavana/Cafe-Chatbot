@@ -24,6 +24,7 @@ Café NovaBot is an intelligent, interactive chatbot built using Python and Flas
 - **Session Handling:** Flask `session`
 
 ---
+***** move images folder to static folder or else reroute the images in code****
 
 ## 📂 Project Structure
 cafe_chatbot_project/
