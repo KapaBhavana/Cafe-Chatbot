@@ -1,0 +1,122 @@
+[
+  {
+    "id": 1,
+    "name": {
+      "en": "Cappuccino", "hi": "कैपुचीनो", "te": "కప్పుచినో", "ta": "கப்புச்சினோ"
+    },
+    "price": 120,
+    "image": "/static/images/cappuccino.jpg"
+  },
+  {
+    "id": 2,
+    "name": {
+      "en": "Espresso", "hi": "एस्प्रेसो", "te": "ఎస్ప్రెస్సో", "ta": "எஸ்பிரஸ்ஸோ"
+    },
+    "price": 100,
+    "image": "/static/images/espresso.jpg"
+  },
+  {
+    "id": 3,
+    "name": {
+      "en": "Latte", "hi": "लट्टे", "te": "లాటే", "ta": "லாட்டே"
+    },
+    "price": 130,
+    "image": "/static/images/latte.jpg"
+  },
+  {
+    "id": 4,
+    "name": {
+      "en": "Americano", "hi": "अमेरिकानो", "te": "అమెరికానో", "ta": "அமெரிக்கானோ"
+    },
+    "price": 110,
+    "image": "/static/images/americano.jpg"
+  },
+  {
+    "id": 5,
+    "name": {
+      "en": "Mocha", "hi": "मोका", "te": "మోచా", "ta": "மோகா"
+    },
+    "price": 140,
+    "image": "/static/images/mocha.jpg"
+  },
+  {
+    "id": 6,
+    "name": {
+      "en": "Hot Chocolate", "hi": "हॉट चॉकलेट", "te": "హాట్ చాకొలెట్", "ta": "ஹாட் சாக்லேட்"
+    },
+    "price": 150,
+    "image": "/static/images/hot_chocolate.jpg"
+  },
+  {
+    "id": 7,
+    "name": {
+      "en": "Masala Tea", "hi": "मसाला चाय", "te": "మసాలా టీ", "ta": "மசாலா டீ"
+    },
+    "price": 60,
+    "image": "/static/images/masala_tea.jpg"
+  },
+  {
+    "id": 8,
+    "name": {
+      "en": "Green Tea", "hi": "ग्रीन टी", "te": "గ్రీన్ టీ", "ta": "கிரீன் டீ"
+    },
+    "price": 70,
+    "image": "/static/images/green_tea.jpg"
+  },
+  {
+    "id": 9,
+    "name": {
+      "en": "Croissant", "hi": "क्रोइसैन", "te": "క్రోయిసెంట్", "ta": "க்ரோசன்ட்"
+    },
+    "price": 80,
+    "image": "/static/images/croissant.jpg"
+  },
+  {
+    "id": 10,
+    "name": {
+      "en": "Chocolate Muffin", "hi": "चॉकलेट मफिन", "te": "చాక్లెట్ మఫిన్", "ta": "சாக்லேட் மப்பின்"
+    },
+    "price": 90,
+    "image": "/static/images/chocolate_muffin.jpg"
+  },
+  {
+    "id": 11,
+    "name": {
+      "en": "Veg Sandwich", "hi": "वेज सैंडविच", "te": "వెజ్ శాండ్‌విచ్", "ta": "வெஜ் சாண்ட்விச்"
+    },
+    "price": 100,
+    "image": "/static/images/veg_sandwich.jpg"
+  },
+  {
+    "id": 12,
+    "name": {
+      "en": "Cheese Garlic Bread", "hi": "चीज़ गार्लिक ब्रेड", "te": "చీజ్ గార్లిక్ బ్రెడ్", "ta": "சீஸ் கார்லிக் பிரெட்"
+    },
+    "price": 110,
+    "image": "/static/images/cheese_garlic_bread.jpg"
+  },
+  {
+    "id": 13,
+    "name": {
+      "en": "Cold Coffee", "hi": "कोल्ड कॉफी", "te": "కోల్డ్ కాఫీ", "ta": "குளிர் காபி"
+    },
+    "price": 130,
+    "image": "/static/images/cold_coffee.jpg"
+  },
+  {
+    "id": 14,
+    "name": {
+      "en": "Strawberry Shake", "hi": "स्ट्रॉबेरी शेक", "te": "స్ట్రాబెర్రీ షేక్", "ta": "ஸ்ட்ராபெரி ஷேக்"
+    },
+    "price": 140,
+    "image": "/static/images/strawberry_shake.jpg"
+  },
+  {
+    "id": 15,
+    "name": {
+      "en": "Iced Tea", "hi": "आइस्ड टी", "te": "ఐస్‌డ్ టీ", "ta": "ஐஸ்ட் டீ"
+    },
+    "price": 100,
+    "image": "/static/images/iced_tea.jpg"
+  }
+]
