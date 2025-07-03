@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Café NovaBot</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <style>
+        body {
+            background-image: url('/static/images/home_bg.jpg');
+            background-size: cover;
+            background-position: center;
+            margin: 0;
+            padding: 0;
+            height: 100vh;
+            color: white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            font-family: 'Segoe UI', sans-serif;
+        }
+
+        .overlay {
+            background: rgba(0, 0, 0, 0.6);
+            padding: 50px;
+            border-radius: 15px;
+        }
+
+        h1 {
+            font-size: 3rem;
+        }
+
+        a.button {
+            display: inline-block;
+            margin-top: 20px;
+            background: #ffc107;
+            color: black;
+            padding: 15px 30px;
+            border-radius: 30px;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        a.button:hover {
+            background: #ff9800;
+        }
+    </style>
+</head>
+<body>
+    <div class="overlay">
+        <h1>☕ Café NovaBot</h1>
+        <p>The future of ordering your favorite café delights.</p>
+        <a class="button" href="/chat">Order Now</a>
+    </div>
+</body>
+</html>

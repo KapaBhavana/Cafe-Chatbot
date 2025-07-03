@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Order Confirmation - Café NovaBot</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <style>
+        body {
+            font-family: 'Segoe UI', sans-serif;
+            background: #f8f9fa;
+            margin: 0;
+            padding: 40px;
+        }
+
+        .container {
+            max-width: 650px;
+            margin: auto;
+            background: white;
+            padding: 30px 40px;
+            border-radius: 15px;
+            box-shadow: 0 6px 18px rgba(0,0,0,0.1);
+        }
+
+        h2 {
+            color: #2e7d32;
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        .meta {
+            font-size: 15px;
+            color: #555;
+            margin-bottom: 25px;
+            text-align: center;
+        }
+
+        ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        li {
+            padding: 12px 0;
+            border-bottom: 1px solid #e0e0e0;
+            font-size: 17px;
+        }
+
+        .total, .tax, .grand-total {
+            font-size: 18px;
+            text-align: right;
+            margin-top: 8px;
+        }
+
+        .tax {
+            color: #777;
+        }
+
+        .grand-total {
+            font-weight: bold;
+            color: #2e7d32;
+            font-size: 20px;
+        }
+
+        .thank-you {
+            text-align: center;
+            margin-top: 30px;
+            font-size: 18px;
+            color: #555;
+        }
+
+        .btn-back {
+            display: inline-block;
+            margin: 30px auto 0;
+            background-color: #4CAF50;
+            color: white;
+            padding: 12px 24px;
+            text-decoration: none;
+            border-radius: 8px;
+            text-align: center;
+        }
+
+        .btn-back:hover {
+            background-color: #43a047;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2>🧾 Order Confirmed!</h2>
+
+        {% if order %}
+        <div class="meta">
+            <div><strong>Order ID:</strong> {{ order_id }}</div>
+            <div><strong>Date:</strong> {{ timestamp }}</div>
+        </div>
+
+        <ul>
+            {% for item in order.items %}
+            <li>{{ item.name[language] if language in item.name else item.name['en'] }} - ₹{{ item.price }}</li>
+            {% endfor %}
+        </ul>
+
+        <div class="tax">Tax (5%): ₹{{ tax }}</div>
+        <div class="total">Subtotal: ₹{{ total }}</div>
+        <div class="grand-total">Grand Total: ₹{{ grand_total }}</div>
+        <div class="thank-you">Thank you for ordering with Café NovaBot!</div>
+        {% else %}
+        <p style="text-align: center;">Your order has already been completed or no order found.</p>
+        {% endif %}
+
+        <div style="text-align: center;">
+            <a href="/" class="btn-back">⬅ Back to Home</a>
+        </div>
+    </div>
+</body>
+</html>
